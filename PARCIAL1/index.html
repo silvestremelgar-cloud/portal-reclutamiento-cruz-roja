@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia Don Figaro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="inicio" class="contenedor header-barberia">
+        <h1>Barberia Don Figaro</h1>
+
+        <nav class="menu">
+            <a href="#inicio">INICIO</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <section id="servicios" class="tarjeta seccion-servicios">
+            <h2>Servicios</h2>
+            <p> En nuestra barberia ofrecemos cortes como: "sin cejas", "El promo 2x1", "corte diplomatico"</p>
+        </section>
+        <section id="servicios" class="tarjeta seccion-servicios">
+            <h2>Sin cejas</h2>
+                <li><span>Para los que quieren que los miren dos veces</span> 
+                <p>25 Bs</p>
+            </ul>
+        </section>
+        <section id="servicios" class="tarjeta seccion-servicios">
+            <h2>Promo 2x1</h2>
+                <li><span>Promo 2x1, trae a tu corteja y a tu amante</span> 
+                <p>Corte completamente GRATIS</p>
+        </section>
+        <section id="servicios" class="tarjeta seccion-servicios">
+            <h2>Corte diplomatico</h2>
+                <li><span>Para que tu suegra no te reconozca en la calle</span> 
+                <p>40 Bs</p>
+            </ul>
+        </section>
+        <section id="contacto" class="tarjeta seccion-reserva">
+            <h2>Reserva tu Turno</h2>
+            <form id="form-reserva" action="#" method="POST">
+                <div class="campo-form">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre_cliente"
+                        placeholder="Ej. Juan Pérez"
+                        required
+                    >
+                </div>
+                <div class="campo-form">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="email_cliente"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                </div>
+                <div class="campo-form">
+                    <label for="comentario">Comentario o preferencia</label>
+                    <textarea 
+                        id="comentario" 
+                        name="comentario_cliente" 
+                        rows="3" 
+                        placeholder="Indícanos la fecha u hora de tu preferencia..."
+                    ></textarea>
+                </div>
+                <button type="submit" id="btn-confirmar" class="btn-reserva">
+                    Confirmar Turno
+                </button>
+            </form>
+            <p id="mensaje" class="oculto mensaje-confirmacion"></p>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <p>Parcial 1 - Silvestre Mauricio Melgar Coimbra</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
