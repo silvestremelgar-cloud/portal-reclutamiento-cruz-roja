@@ -253,3 +253,18 @@ footer{
 .modo-oscuro footer{
     background:black;
 }
+
+#mensaje-formulario{
+    margin-top:20px;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+}
+#mensaje-formulario.error{
+    color:#a00000;
+    background:#ffe5e5;
+}
+#mensaje-formulario.exito{
+    color:#087a2b;
+    background:#e3f8e9;
+}
