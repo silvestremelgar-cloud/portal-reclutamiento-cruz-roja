@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTICA MIRASOL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>OPTICA MIRASOL</h1>
+        <p> EN NUESTRA OPTICA, CUIDAR DE TU VISION ES NUESTRO TRABAJO, SIEMPRE TRABAJANDO PARA ENCONTRAR LA SOLUCION A TU PROBLEMA, NUESTRO PERSONAL SIEMPRE COMPROMETIDO CONTIGO.</p>
+    </header>
+    <main>
+        <form id="form-cita" novalidate method="POST" action="procesar.php">
+            <div>
+                <label for="nombre">NOMBRE COMPLETO</label>
+                <input type="text" id="NOMBRE" name="NOMBRE" required>
+            </div>
+            <div>
+                <label for="CORREO">CORREO ELECTRONICO</label>
+                <input type="EMAIL" id="CORREO" name="CORREO" required></div>
+            <div>
+                <label for="CONSULTA">EN QUE PODEMOS AYUDARTE</label>
+                <textarea id="CONSULTA" name="CONSULTA" rows="5"></textarea>
+            </div> <button type="submit">REALIZAR CITA</button>
+            <p id="aviso-cita" class="AVISO"></p>
+        </form>
+    </main>
+    <footer>
+        <p>PARCIAL 2 - SILVESTRE MAURICIO MELGAR COIMBRA - 11 DE AGOSTO DE 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
